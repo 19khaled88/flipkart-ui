@@ -1,8 +1,9 @@
-import { Box, Button, styled } from '@mui/material'
+import { Box, styled } from '@mui/material'
 
 import React from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import { Link } from 'react-router-dom'
 import { beauty_food } from '../../data/data'
 const bfLength = beauty_food?.length
 const response = {
@@ -48,6 +49,10 @@ const hoverEffect = {
   '&:hover': {
     transform: 'scale(1.1)',
   },
+}
+
+const clickHandler = (name) => {
+  console.log(name)
 }
 const BeautyFoodToy = () => {
   return (
@@ -117,12 +122,27 @@ const BeautyFoodToy = () => {
       </Box>
       <ViewAll style={{ width: '100%' }}>
         <p className="zoomEffect">Beauty, Food, Toy & more</p>
-        <Button
-          style={{ width: '50%', padding: '2px 0px', margin: '4px 0px' }}
-          variant="contained"
+        <Link
+          to="/page/beauty_food"
+          style={{ textDecoration: 'none', listStyle: 'none' }}
         >
-          View All
-        </Button>
+          <button
+            style={{
+              padding: '10px 15px',
+              margin: '4px 0px',
+              backgroundColor: '#2874f0',
+              border: 'none',
+              fontSize: '15px',
+              color: 'white',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+              borderRadius: '5px',
+            }}
+            variant="contained"
+          >
+            View All
+          </button>
+        </Link>
         <Box sx={hoverEffect}>
           <img
             src="/beauty_food_toy_&_more/holidays-food.png"

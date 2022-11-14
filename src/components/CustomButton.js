@@ -6,12 +6,12 @@ import { ShoppingCart } from '@mui/icons-material'
 // import FavoriteIcon from '@mui/icons-material/Favorite'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 // import LocalHospitalIcon from '@mui/icons-material/LocalHospital'
-import { LoginDropdownItems,more } from '../data/data'
+import { LoginDropdownItems, more } from '../data/data'
 // import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { Box, Button, Divider, styled, Typography } from '@mui/material'
 import '../css/customButton.css'
 
-import React, { useState } from 'react'
+import React from 'react'
 const Wrapper = styled(Box)`
   display: flex;
   margin: 0 3% 0 auto;
@@ -46,25 +46,36 @@ const LoginDropdown = styled(Box)`
 `
 
 const CustomButton = () => {
-
   const customFunc = (data) => {
     let array = []
-    data.map((item ,index) =>
+    data.map((item, index) =>
       array.push(
-        <div key={index} style={{display:'flex',flexDirection:'row',alignItems:'center',paddingLeft:'8px'}}>
-            <img src={item.icon} alt="empty" style={{width:'18px', height:'18px'}} />
-            <li
-              style={{
-                listStyle: 'none',
-                textAlign: 'start',
-                padding: '7px 5px 7px 5px',
-              }}
-            >
-              {item.name}
-            </li>
-        
+        <div
+          key={index}
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            paddingLeft: '8px',
+          }}
+        >
+          <img
+            src={item.icon}
+            alt="empty"
+            style={{ width: '18px', height: '18px' }}
+          />
+          <li
+            style={{
+              listStyle: 'none',
+              textAlign: 'start',
+              padding: '7px 5px 7px 5px',
+            }}
+          >
+            {item.name}
+          </li>
+
           <Divider />
-        </div>
+        </div>,
       ),
     )
     return array
@@ -73,19 +84,15 @@ const CustomButton = () => {
   return (
     <Wrapper>
       <Box
-        className='login-menu'
+        className="login-menu"
         style={{
           display: 'flex',
           flexDirection: 'column',
         }}
       >
-        <LoginButton
-          className='menu-button'
-        >
-          Login
-        </LoginButton>
-         <ul 
-          className='dropdown-menu'
+        <LoginButton className="menu-button">Login</LoginButton>
+        <ul
+          className="dropdown-menu"
           key={Math.random() * 100000}
           style={{
             margin: '0px',
@@ -102,27 +109,26 @@ const CustomButton = () => {
             width: '150px',
           }}
         >
-        {customFunc(LoginDropdownItems)}
+          {customFunc(LoginDropdownItems)}
         </ul>
       </Box>
       <Typography style={{ marginTop: 3 }}>Become a seller</Typography>
-      <Box
-        className="more-menu"
-      >
+      <Box className="more-menu">
         <Typography
-          className='menu-button'
+          className="menu-button"
           style={{
-            marginTop: 3,
+            margin: '3px',
+            padding: '3px',
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'start',
+            borderRadius: '5px',
           }}
         >
           More <KeyboardArrowDownIcon />
-        
         </Typography>
-        <ul 
-          className='dropdown-menu'
+        <ul
+          className="dropdown-menu"
           key={Math.random() * 100000}
           style={{
             margin: '0px',
@@ -139,10 +145,10 @@ const CustomButton = () => {
             width: '150px',
           }}
         >
-        {customFunc(more)}
+          {customFunc(more)}
         </ul>
       </Box>
-      
+
       <Typography
         style={{
           marginTop: 3,

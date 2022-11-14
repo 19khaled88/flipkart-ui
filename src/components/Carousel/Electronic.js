@@ -1,8 +1,9 @@
-import { Box, Button, styled } from '@mui/material'
+import { Box, styled } from '@mui/material'
 
 import React from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import { Link } from 'react-router-dom'
 import '../../css/electronic.css'
 import { bestOfElectronic } from '../../data/data'
 const eLength = bestOfElectronic?.length
@@ -50,6 +51,9 @@ const ViewAll = styled(Box)`
     padding: 2px 0px;
   }
 `
+const clickHandler = (name) => {
+  console.log(name)
+}
 const Electronic = () => {
   return (
     <Box
@@ -62,12 +66,24 @@ const Electronic = () => {
     >
       <ViewAll>
         <p className="zoomEffect">Best Electronic Goods</p>
-        <Button
-          style={{ width: '50%', padding: '2px 0px', margin: '4px 0px' }}
-          variant="contained"
-        >
-          View All
-        </Button>
+        <Link to="/page/bestOfElectronic">
+          <button
+            style={{
+              padding: '10px 15px',
+              margin: '4px 0px',
+              backgroundColor: '#2874f0',
+              border: 'none',
+              fontSize: '15px',
+              color: 'white',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+              borderRadius: '5px',
+            }}
+            variant="contained"
+          >
+            View All
+          </button>
+        </Link>
         <Box sx={hoverEffect}>
           <img
             src="/electronics/electronic-tool-icon-removebg-preview.png"
