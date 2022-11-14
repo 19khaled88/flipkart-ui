@@ -6,34 +6,34 @@ import '../../css/electronic.css'
 import { joinCricket } from '../../data/data'
 const cLength = joinCricket?.length
 const response = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: cLength - 3,
-      slidesToSlide: 1,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: cLength - 3,
-      slidesToSlide: 1,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: cLength - 3,
-      slidesToSlide: 1,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: cLength - 3,
-      slidesToSlide: 1,
-    },
-  }
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: cLength - 3,
+    slidesToSlide: 1,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: cLength - 3,
+    slidesToSlide: 1,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: cLength - 3,
+    slidesToSlide: 1,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: cLength - 3,
+    slidesToSlide: 1,
+  },
+}
 const hoverEffect = {
-    transition: 'transform .5s ease-in-out',
-    '&:hover': {
-      transform: 'scale(1.1)',
-    },
-  }
+  transition: 'transform .5s ease-in-out',
+  '&:hover': {
+    transform: 'scale(1.1)',
+  },
+}
 const SlideItems = styled(Box)``
 const ViewAll = styled(Box)`
   width: 15%;
@@ -52,41 +52,40 @@ const ViewAll = styled(Box)`
 const Cricket = () => {
   return (
     <Box
-        style={{
-            display: 'flex',
-            width: '96%',
-            height:'300px',
-            padding: '20px 2px 10px 0px',
-            margin: '20px',
-        }}
+      style={{
+        display: 'flex',
+        width: '96%',
+        height: '300px',
+        padding: '20px 2px 10px 0px',
+        margin: '20px',
+      }}
     >
-        <ViewAll
-            style={{
-                paddingTop:'0px',
-                paddingBottom:'0px',
-                
-            }}
+      <ViewAll
+        style={{
+          paddingTop: '0px',
+          paddingBottom: '0px',
+        }}
+      >
+        <p className="zoomEffect">Join Cricket & Fun!</p>
+        <Button
+          style={{ width: '50%', padding: '2px 0px', margin: '4px 0px' }}
+          variant="contained"
         >
-            <p className="zoomEffect">Join Cricket & Fun!</p>
-            <Button
-            style={{ width: '50%', padding: '2px 0px', margin: '4px 0px' }}
-            variant="contained"
-            >
-            View All
-            </Button>
-            <Box sx={hoverEffect}>
-            <img
-                src="/cricket/cricketScenario.jpg"
-                alt="empty"
-                style={{ width: '90%', padding: '10px 0px', margin: '20px 0px' }}
-            />
-            </Box>
-        </ViewAll>
-        <Box
+          View All
+        </Button>
+        <Box sx={hoverEffect}>
+          <img
+            src="/cricket/cricketScenario.jpg"
+            alt="empty"
+            style={{ width: '90%', padding: '10px 0px', margin: '20px 0px' }}
+          />
+        </Box>
+      </ViewAll>
+      <Box
         style={{
           width: '85%',
           padding: '20px 5px 10px 5px',
-          boxShadow: 'rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px'
+          boxShadow: 'rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px',
         }}
       >
         <Carousel
@@ -110,30 +109,41 @@ const Cricket = () => {
                   height: '100%',
                 }}
               >
-                {
-                    data.name == 'No Cricket' ? null :
-                    <>
+                {data.name == 'No Cricket' ? null : (
+                  <>
                     <Box sx={hoverEffect}>
-                        <img
-                            src={data.image}
-                            alt="empty"
-                            style={{
-                            width: '100%',
-                            height: '66%',
-                            padding: '2px 0px 0px 0px',
-                            margin: '5px 0px 0px 0px',
-                            }}
-                        />
+                      <img
+                        src={data.image}
+                        alt="empty"
+                        style={{
+                          width: '100%',
+                          height: '66%',
+                          padding: '2px 0px 5px 0px',
+                          margin: '5px 0px 0px 0px',
+                        }}
+                      />
                     </Box>
-                        <p style={{ padding: '0px', margin: '0px', fontSize: '13px' }}>
-                        {data.name}
-                        </p>
-                        
-                        <p style={{ padding: '0px', margin: '0px', fontSize: '13px' }}>
-                        {data.offer}
-                        </p>
-                    </>
-                }
+                    <p
+                      style={{
+                        padding: '0px',
+                        margin: '0px',
+                        fontSize: '13px',
+                      }}
+                    >
+                      {data.name}
+                    </p>
+
+                    <p
+                      style={{
+                        padding: '0px',
+                        margin: '0px',
+                        fontSize: '13px',
+                      }}
+                    >
+                      {data.offer}
+                    </p>
+                  </>
+                )}
               </SlideItems>
             </span>
           ))}

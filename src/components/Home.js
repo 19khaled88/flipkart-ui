@@ -10,8 +10,8 @@ import Electronic from './Carousel/Electronic'
 import Winter from './Carousel/Winter'
 
 import Layout from './layouts/Layout'
-import ManualNav from './ManualNav'
-import SmartNav from './SmartNav'
+import Navbar from './Navbar'
+
 
 const responsive = {
   superLargeDesktop: {
@@ -52,7 +52,7 @@ const Home = () => {
   return (
     <div className="home">
       <Layout>
-       <ManualNav />
+       <Navbar />
        <CarouselContainer>
           <Carousel
             responsive={responsive}

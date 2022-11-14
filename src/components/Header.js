@@ -2,7 +2,7 @@ import { AppBar, Box, styled, Toolbar, Typography } from '@mui/material'
 import React from 'react'
 import '../css/header.css'
 import CustomButton from './CustomButton'
-import Navbar from './Navbar'
+
 import Search from './Search'
 
 const StyleHeader = styled(AppBar)`

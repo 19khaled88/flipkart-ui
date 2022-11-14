@@ -20,7 +20,7 @@ const ProductList = (props) => {
     for (let product in productByPrice) {
       if (productByPrice[product].length > 0) {
         dt.push(
-          <div key={Math.random() * 10} className="card">
+          <div key={Math.random() * 100000} className="card">
             <div className="cardHeader">
               <p>
                 {slug + ' mobile under'}
@@ -40,11 +40,11 @@ const ProductList = (props) => {
             </div>
             <div style={{ display: 'flex' }}>
               {productByPrice[product].map((item) => (
-                <div key={Math.random() * 10} className="productContainer">
+                <div key={Math.random() * 100000} className="productContainer">
                   <div className="productImgContainer">
                     {item.productPicture.map((element) => (
                       <img
-                        key={Math.random() * 10}
+                        key={Math.random() * 100000}
                         src={`http://localhost:8000/public/${element.img}`}
                         alt=""
                       />

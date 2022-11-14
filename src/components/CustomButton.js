@@ -1,21 +1,15 @@
 import { ShoppingCart } from '@mui/icons-material'
-import AccountCircleIcon from '@mui/icons-material/AccountCircle'
-import AddchartIcon from '@mui/icons-material/Addchart'
-import CardGiftcardIcon from '@mui/icons-material/CardGiftcard'
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents'
-import FavoriteIcon from '@mui/icons-material/Favorite'
+// import AccountCircleIcon from '@mui/icons-material/AccountCircle'
+// import AddchartIcon from '@mui/icons-material/Addchart'
+// import CardGiftcardIcon from '@mui/icons-material/CardGiftcard'
+// import EmojiEventsIcon from '@mui/icons-material/EmojiEvents'
+// import FavoriteIcon from '@mui/icons-material/Favorite'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
-import LocalHospitalIcon from '@mui/icons-material/LocalHospital'
+// import LocalHospitalIcon from '@mui/icons-material/LocalHospital'
+import { LoginDropdownItems,more } from '../data/data'
 // import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import {
-  Box,
-  Button,
-  Divider,
-  Menu,
-  MenuItem,
-  styled,
-  Typography,
-} from '@mui/material'
+import { Box, Button, Divider, styled, Typography } from '@mui/material'
+import '../css/customButton.css'
 
 import React, { useState } from 'react'
 const Wrapper = styled(Box)`
@@ -50,111 +44,105 @@ const LoginDropdown = styled(Box)`
   align-items: center;
   padding-left: 10px;
 `
+
 const CustomButton = () => {
-  const [anchorEl, setAnchorEl] = useState(null)
-  const [anchorE2, setAnchorE2] = useState(null)
-  const handleClick = (event) => {
-    if (anchorEl !== event.currentTarget) {
-      setAnchorEl(event.currentTarget)
-    }
+
+  const customFunc = (data) => {
+    let array = []
+    data.map((item ,index) =>
+      array.push(
+        <div key={index} style={{display:'flex',flexDirection:'row',alignItems:'center',paddingLeft:'8px'}}>
+            <img src={item.icon} alt="empty" style={{width:'18px', height:'18px'}} />
+            <li
+              style={{
+                listStyle: 'none',
+                textAlign: 'start',
+                padding: '7px 5px 7px 5px',
+              }}
+            >
+              {item.name}
+            </li>
+        
+          <Divider />
+        </div>
+      ),
+    )
+    return array
   }
-  const handleClose = () => {
-    setAnchorEl(null)
-  }
-  const handleMoreClick = (event) => {
-    console.log(window.innerWidth)
-    if (anchorE2 !== event.currentTarget) {
-      setAnchorE2(event.currentTarget)
-    }
-  }
-  const handleMoreClose = () => {
-    setAnchorE2(null)
-  }
+
   return (
     <Wrapper>
-      <LoginButton
-        aria-owns={anchorEl ? 'simple-menu' : undefined}
-        onClick={handleClick}
-        onMouseOver={handleClick}
-        variant="contained"
-      >
-        Login
-      </LoginButton>
-      <Menu
-        id="simple-menu"
-        anchorEl={anchorEl}
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-        MenuListProps={{ onMouseLeave: handleClose }}
-      >
-        <MenuItem onClick={handleClose}>
-          New Customer ? <Button type="button">Sign up</Button>
-        </MenuItem>
-        <Divider />
-        <LoginDropdown>
-          <AccountCircleIcon />
-          <MenuItem onClick={handleClose}>My Account</MenuItem>
-        </LoginDropdown>
-        <Divider />
-        <LoginDropdown>
-          <LocalHospitalIcon />
-          <MenuItem onClick={handleClose}>FlipKart Plus Zone</MenuItem>
-        </LoginDropdown>
-        <Divider />
-        <LoginDropdown>
-          <AddchartIcon />
-          <MenuItem onClick={handleClose}>Orders</MenuItem>
-        </LoginDropdown>
-        <Divider />
-        <LoginDropdown>
-          <FavoriteIcon />
-          <MenuItem onClick={handleClose}>Wishlist</MenuItem>
-        </LoginDropdown>
-        <Divider />
-        <LoginDropdown>
-          <CardGiftcardIcon />
-          <MenuItem onClick={handleClose}>Gift Cards</MenuItem>
-        </LoginDropdown>
-        <Divider />
-        <LoginDropdown>
-          <EmojiEventsIcon />
-          <MenuItem onClick={handleClose}>Rewards</MenuItem>
-        </LoginDropdown>
-      </Menu>
-      <Typography style={{ marginTop: 3 }}>Become a seller</Typography>
-      <Typography
-        aria-owns={anchorE2 ? 'more-menu' : undefined}
-        onClick={handleMoreClick}
-        onMouseOver={handleMoreClick}
-        variant="contained"
+      <Box
+        className='login-menu'
         style={{
-          marginTop: 3,
-
           display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'start',
+          flexDirection: 'column',
         }}
       >
-        More <KeyboardArrowDownIcon />
-      </Typography>
-      <Menu
-        id="more-menu"
-        anchorE2={anchorE2}
-        open={Boolean(anchorE2)}
-        getContentAnchorEl={null}
-        anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-        transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-        onClose={handleMoreClose}
-        MenuListProps={{
-          onMouseLeave: handleMoreClose,
-        }}
+        <LoginButton
+          className='menu-button'
+        >
+          Login
+        </LoginButton>
+         <ul 
+          className='dropdown-menu'
+          key={Math.random() * 100000}
+          style={{
+            margin: '0px',
+            padding: '0px',
+            color: 'black',
+            position: 'absolute',
+            backgroundColor: '#fff',
+            top: 35,
+            borderRadius: '5px',
+            // borderBottomLeftRadius: '5px',
+            // borderBottomRightRadius: '5px',
+            boxShadow:
+              'rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px',
+            width: '150px',
+          }}
+        >
+        {customFunc(LoginDropdownItems)}
+        </ul>
+      </Box>
+      <Typography style={{ marginTop: 3 }}>Become a seller</Typography>
+      <Box
+        className="more-menu"
       >
-        <MenuItem onClick={handleMoreClose}>Notification preference</MenuItem>
-        <Divider />
-        <MenuItem onClick={handleMoreClose}>24*7 customer care</MenuItem>
-        <Divider />
-        <MenuItem onClick={handleMoreClose}>Advertise</MenuItem>
-      </Menu>
+        <Typography
+          className='menu-button'
+          style={{
+            marginTop: 3,
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'start',
+          }}
+        >
+          More <KeyboardArrowDownIcon />
+        
+        </Typography>
+        <ul 
+          className='dropdown-menu'
+          key={Math.random() * 100000}
+          style={{
+            margin: '0px',
+            padding: '0px',
+            color: 'black',
+            position: 'absolute',
+            backgroundColor: '#fff',
+            top: 35,
+            borderRadius: '5px',
+            // borderBottomLeftRadius: '5px',
+            // borderBottomRightRadius: '5px',
+            boxShadow:
+              'rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px',
+            width: '150px',
+          }}
+        >
+        {customFunc(more)}
+        </ul>
+      </Box>
+      
       <Typography
         style={{
           marginTop: 3,

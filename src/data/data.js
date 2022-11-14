@@ -2,635 +2,499 @@ export const data = [
   {
     id: 1,
     icon: '/special-offer.jpg',
+    image: '/menuicon/offer.png',
     name: 'Special Offers',
   },
   {
     id: 2,
     icon: '/Grocery-logos.png',
+    image: '/menuicon/grocery.png',
     name: 'Grocery',
   },
   {
     id: 3,
     icon: '/mobile-phone-icon-.png',
+    image: '/menuicon/smartphone.png',
     name: 'Mobiles',
   },
   {
     id: 4,
     icon: '/electronic.jpg',
+    image: '/menuicon/responsive.png',
     name: 'Electronics',
-    subItem:[
+    subItem: [
       {
-        all:[
-          "Men's T-Shirt",
-          "Men's Casual Shirts",
-          "Men's Formal Shirts",
-          "Men's Kurtas",
-          "Men's Ethnics sets",
-          "Men's Jeans",
-          "Men's Trousers",
-          "Men's Trackpants",
-          "Men's Shorts",
-          "Men's Cargos",
-          "Women Sarees",
-          "Women Kurtas & Salwar suits",
-          "Ethnic Dresses",
-          "Women Dress Materials",
-          "Women Gowns",
-          "Women Tops",
-          "Women Dresses",
-          "Women T-shirts & polo T-shirt",
-          "Women Jeans",
-          "Women Nightsuit",
-          "Men's Sports Shoes",
-          "Men's Casual Shoes",
-          "Men's Sandals & floaters",
-          "Men's Slippers & flip flops",
-          "Women Flats",
-          "Women Heels",
-          "Women Wedges",
-          "Wemen Slipper flip flops",
-          "Men & Women Watches",
-          "Men & Women Sunglasses",
-          "Wallets",
-          "Men & Women Belts",
-          "Women fashion jewellery",
-          "Bags & Backpacks",
-          "Suitcases & trolleys",
-          "dufflebags",
-          "rucksacks",
-          "handbags",
-          "slingbags",
-          "Girls Dress",
-          "Boys & girls tshirts",
-          "Boy & girls combosets",
-          "boys & girls ethnic wear",
-          "Boys & girls jeans",
-          "Men's Briefs & trunks",
-          "Men's vests",
-          "Men's Boxers",
-          "Women lingerie sets",
-          "women bra",
-          "women panty",
-          "women sarees"
-        ]
-      },{
-       'Electronics GST Store':[]
-      },{
-       "Cameras & Accessories":[
-          "DSLR & Mirroless",
-          "Sports & action",
-          "Point & Shoot",
-          "Instant Cameras",
-          "Camcorders",
-          "Camera Tripods",
-          "Camera Lenses"
-        ]
-      },{
-        "Computer Peripherals":[
-          "Printers",
-          "Monitors",
-          "Projectors",
-          "Toners",
-          "Ink Cartridges",
-          "Ink Bottles"
-        ]
-      },{
-        "Gaming":[
-          "Gaming Consoles",
-          "Gaming Mouse",
-          "Gaming keyboards",
-          "Gamepads",
-          "Games",
-          "Accessory kits",
-          "Gaming Accessories Combo"
-        ]
-      },{
-        "Health & Personal Care":[
-          "Trimmers",
-          "Shavers",
-          "Hair Stringhteners",
-          "Hair Dryers",
-          "Epilators",
-          "Glucometers And Accessories",
-          "Blood Pressure Monitors"
-        ]
-      },{
-        "Laptop Accossories":[
-          "Mouse",
-          "Laptop Keyboards",
-          "Router",
-          "Data Cards",
-          "UPS",
-          "USB Gadgets",
-          "Security Software",
-          "Laptop Battery"
-        ]
-      },{
-        "Laptop And Desktop":[
-          "Laptop",
-          "Gaming Laptops",
-          "Desktop PCS",
-          "All in One PCs",
-          "Minis PCs",
-          "Tower PCs"
-        ]
-      },{
-        "Mobile Accessory":[
-          "Plain Cases",
-          "Designer Cases",
-          "Screen Guards",
-          "Camera Lens Protectors",
-          "Tablet Accessories",
-          "Mobile Cable",
-          "Mobile Charging Mobile Charger",
-          "Mobile Pouches"
-
-        ]
-      },{
-        "Power Bank":[
-          "Power Bank",
-        ]
-      },{
-        "Smart Home automation":[
-          "Smart Assistants",
-          "Smart Lights",
-          "Smart Cameras",
-          "Smart Switches",
-          "Smart Door locks",
-          "Sensors & Alarms",
-        ]
-      }        
-    ]
+        id: 1,
+        'Electronics GST Store': [],
+      },
+      {
+        id: 2,
+        'Cameras & Accessories': [
+          'DSLR & Mirroless',
+          'Sports & action',
+          'Point & Shoot',
+          'Instant Cameras',
+          'Camcorders',
+          'Camera Tripods',
+          'Camera Lenses',
+        ],
+      },
+      {
+        id: 3,
+        'Computer Peripherals': [
+          'Printers',
+          'Monitors',
+          'Projectors',
+          'Toners',
+          'Ink Cartridges',
+          'Ink Bottles',
+        ],
+      },
+      {
+        id: 4,
+        Gaming: [
+          'Gaming Consoles',
+          'Gaming Mouse',
+          'Gaming keyboards',
+          'Gamepads',
+          'Games',
+          'Accessory kits',
+          'Gaming Accessories Combo',
+        ],
+      },
+      {
+        id: 5,
+        'Health & Personal Care': [
+          'Trimmers',
+          'Shavers',
+          'Hair Stringhteners',
+          'Hair Dryers',
+          'Epilators',
+          'Glucometers And Accessories',
+          'Blood Pressure Monitors',
+        ],
+      },
+      {
+        id: 6,
+        'Laptop Accossories': [
+          'Mouse',
+          'Laptop Keyboards',
+          'Router',
+          'Data Cards',
+          'UPS',
+          'USB Gadgets',
+          'Security Software',
+          'Laptop Battery',
+        ],
+      },
+      {
+        id: 7,
+        'Laptop And Desktop': [
+          'Laptop',
+          'Gaming Laptops',
+          'Desktop PCS',
+          'All in One PCs',
+          'Minis PCs',
+          'Tower PCs',
+        ],
+      },
+      {
+        id: 8,
+        'Mobile Accessory': [
+          'Plain Cases',
+          'Designer Cases',
+          'Screen Guards',
+          'Camera Lens Protectors',
+          'Tablet Accessories',
+          'Mobile Cable',
+          'Mobile Charging Mobile Charger',
+          'Mobile Pouches',
+        ],
+      },
+      {
+        id: 9,
+        'Power Bank': ['Power Bank'],
+      },
+      {
+        id: 10,
+        'Smart Home automation': [
+          'Smart Assistants',
+          'Smart Lights',
+          'Smart Cameras',
+          'Smart Switches',
+          'Smart Door locks',
+          'Sensors & Alarms',
+        ],
+      },
+    ],
   },
   {
     id: 5,
     icon: '/home-decorating.jpg',
+    image: '/menuicon/house.png',
     name: 'Home',
-    subItem:[
+    subItem: [
       {
-        all:[
-          "Men's T-Shirt",
-          "Men's Casual Shirts",
-          "Men's Formal Shirts",
-          "Men's Kurtas",
-          "Men's Ethnics sets",
-          "Men's Jeans",
-          "Men's Trousers",
-          "Men's Trackpants",
-          "Men's Shorts",
-          "Men's Cargos",
-          "Women Sarees",
-          "Women Kurtas & Salwar suits",
-          "Ethnic Dresses",
-          "Women Dress Materials",
-          "Women Gowns",
-          "Women Tops",
-          "Women Dresses",
-          "Women T-shirts & polo T-shirt",
-          "Women Jeans",
-          "Women Nightsuit",
-          "Men's Sports Shoes",
-          "Men's Casual Shoes",
-          "Men's Sandals & floaters",
-          "Men's Slippers & flip flops",
-          "Women Flats",
-          "Women Heels",
-          "Women Wedges",
-          "Wemen Slipper flip flops",
-          "Men & Women Watches",
-          "Men & Women Sunglasses",
-          "Wallets",
-          "Men & Women Belts",
-          "Women fashion jewellery",
-          "Bags & Backpacks",
-          "Suitcases & trolleys",
-          "dufflebags",
-          "rucksacks",
-          "handbags",
-          "slingbags",
-          "Girls Dress",
-          "Boys & girls tshirts",
-          "Boy & girls combosets",
-          "boys & girls ethnic wear",
-          "Boys & girls jeans",
-          "Men's Briefs & trunks",
-          "Men's vests",
-          "Men's Boxers",
-          "Women lingerie sets",
-          "women bra",
-          "women panty",
-          "women sarees"
-        ]
-      },{
-       "Home Furnishings":[
-        "Bed Linens",
-        "Bedsheets",
-        "Blankets",
-        "Curtainer & Accessories",
-        "Bath linen",
-        "Floor coverings",
-        "Covers & protectors",
-        "Cushions & Pillows"
-       ]
-      },{
-       "Furnitre Studio":[],
-        
-      },{
-        "Living Room Furniture":[
-          "Sofas Sets & Sectionals",
-          "TV Units",
-          "Dinigs Sets",
-          "Coffee Tables",
-          "Sofa Beds",
-          "Recliners",
-          "Living Room Chairs"
-        ]
-      },{
-        "Kitchen & Dining":[
-          "Cookware",
-          "Lunchboxes, Bottles & Flask",
-          "Knives, Choppers & Cutters",
-          "Gas Stoves & Accessores",
-          "Kitchen Tools",
-          "Tableware & Dinnerware",
-          "Barware"
-        ]
-      },{
-        "Bedroom Furniture":[
-          "Mattresses",
-          "Beds",
-          "Wardrobes",
-          "Side Tables",
-          "TV Units",
-          "Office Tables",
-          "Office Chairs",
-          "Bookshelves"
-        ]
-      },{
-        "Home Decor":[
-          "Lightings",
-          "Stickers & Wallpapers",
-          "Paintings & Posters",
-          "Clocks",
-          "Showpieces & Decoratives",
-          "Wall Decor",
-          "Flower & Vases",
-          "Home Fragrances"
-        ]
-      },{
-        "Tools & Utility":[
-          "Hand tools",
-          "Power Tools",
-          "Measuring Tools",
-          "Home Storange & Organizers",
-          "Umbrellas",
-          "Appliance Trolley & Stands"
-        ]
-      },{
-        "Work Space Furniture":[]
-      },{
-        "Lightings & Electricals":[
-          "Bulbs",
-          "Emergency Lights",
-          "Torches",
-          "Tubelights",
-          "Extension Cords",
-          "Outdoor Lamps",
-          "Batteris"
-        ]
-      },{
-        "Space Saving Furniture":[
-          "Portable Laptop Tables",
-          "Collapsible Wardrobes",
-          "Bean Bags & covers",
-          "Shoe Racks",
-          "Cabinet Drawers",
-          "Inflatable Sofas",
-          "Hammock Swings"
-        ]
-      }        
-    ]
+        id: 1,
+        'Home Furnishings': [
+          'Bed Linens',
+          'Bedsheets',
+          'Blankets',
+          'Curtainer & Accessories',
+          'Bath linen',
+          'Floor coverings',
+          'Covers & protectors',
+          'Cushions & Pillows',
+        ],
+      },
+      {
+        id: 2,
+        'Furnitre Studio': [],
+      },
+      {
+        id: 3,
+        'Living Room Furniture': [
+          'Sofas Sets & Sectionals',
+          'TV Units',
+          'Dinigs Sets',
+          'Coffee Tables',
+          'Sofa Beds',
+          'Recliners',
+          'Living Room Chairs',
+        ],
+      },
+      {
+        id: 4,
+        'Kitchen & Dining': [
+          'Cookware',
+          'Lunchboxes, Bottles & Flask',
+          'Knives, Choppers & Cutters',
+          'Gas Stoves & Accessores',
+          'Kitchen Tools',
+          'Tableware & Dinnerware',
+          'Barware',
+        ],
+      },
+      {
+        id: 5,
+        'Bedroom Furniture': [
+          'Mattresses',
+          'Beds',
+          'Wardrobes',
+          'Side Tables',
+          'TV Units',
+          'Office Tables',
+          'Office Chairs',
+          'Bookshelves',
+        ],
+      },
+      {
+        id: 6,
+        'Home Decor': [
+          'Lightings',
+          'Stickers & Wallpapers',
+          'Paintings & Posters',
+          'Clocks',
+          'Showpieces & Decoratives',
+          'Wall Decor',
+          'Flower & Vases',
+          'Home Fragrances',
+        ],
+      },
+      {
+        id: 7,
+        'Tools & Utility': [
+          'Hand tools',
+          'Power Tools',
+          'Measuring Tools',
+          'Home Storange & Organizers',
+          'Umbrellas',
+          'Appliance Trolley & Stands',
+        ],
+      },
+      {
+        id: 8,
+        'Work Space Furniture': [],
+      },
+      {
+        id: 9,
+        'Lightings & Electricals': [
+          'Bulbs',
+          'Emergency Lights',
+          'Torches',
+          'Tubelights',
+          'Extension Cords',
+          'Outdoor Lamps',
+          'Batteris',
+        ],
+      },
+      {
+        id: 10,
+        'Space Saving Furniture': [
+          'Portable Laptop Tables',
+          'Collapsible Wardrobes',
+          'Bean Bags & covers',
+          'Shoe Racks',
+          'Cabinet Drawers',
+          'Inflatable Sofas',
+          'Hammock Swings',
+        ],
+      },
+    ],
   },
   {
     id: 6,
     icon: '/travel.jpg',
+    image: '/menuicon/airplane.png',
     name: 'Travel',
   },
   {
     id: 7,
     icon: '/toy.jpg',
+    image: '/menuicon/storage-box.png',
     name: 'Beauty & toy',
-    subItem:[
+    subItem: [
       {
-        all:[
-          "Men's T-Shirt",
-          "Men's Casual Shirts",
-          "Men's Formal Shirts",
-          "Men's Kurtas",
-          "Men's Ethnics sets",
-          "Men's Jeans",
-          "Men's Trousers",
-          "Men's Trackpants",
-          "Men's Shorts",
-          "Men's Cargos",
-          "Women Sarees",
-          "Women Kurtas & Salwar suits",
-          "Ethnic Dresses",
-          "Women Dress Materials",
-          "Women Gowns",
-          "Women Tops",
-          "Women Dresses",
-          "Women T-shirts & polo T-shirt",
-          "Women Jeans",
-          "Women Nightsuit",
-          "Men's Sports Shoes",
-          "Men's Casual Shoes",
-          "Men's Sandals & floaters",
-          "Men's Slippers & flip flops",
-          "Women Flats",
-          "Women Heels",
-          "Women Wedges",
-          "Wemen Slipper flip flops",
-          "Men & Women Watches",
-          "Men & Women Sunglasses",
-          "Wallets",
-          "Men & Women Belts",
-          "Women fashion jewellery",
-          "Bags & Backpacks",
-          "Suitcases & trolleys",
-          "dufflebags",
-          "rucksacks",
-          "handbags",
-          "slingbags",
-          "Girls Dress",
-          "Boys & girls tshirts",
-          "Boy & girls combosets",
-          "boys & girls ethnic wear",
-          "Boys & girls jeans",
-          "Men's Briefs & trunks",
-          "Men's vests",
-          "Men's Boxers",
-          "Women lingerie sets",
-          "women bra",
-          "women panty",
-          "women sarees"
-        ]
-      },{
-       "Beauty & Personal Care":[
-        "Bath & Oral Care",
-        "Personal Hygiene",
-        "Eye Makeup",
-        "Face Makeup",
-        "Lip Makeup",
-        "Hair Care",
-        "Bath Essentials",
-        "Womens's Personal Hygiene"
-       ]
-      },{
-       "Men's Grooming":[
-        "Face Washes",
-        "Beard Oils",
-        "Hair Styling",
-        "Shaving Essentials",
-        "Aftershave",
-        "Face Creams & Face Packs",
-        "Soaps & Bodywashes"
-       ],
-        
-      },{
-        "Food & Drinks":[
-          "Beverages",
-          "Nuts & Dry Fruits",
-          "Cooking Essentials",
-          "Breakfast Items",
-          "Snacks Corner",
-          "Jams, Spreads & Honey",
-          "Ready to cook & eat"
-        ]
-      },{
-        "Nutrition & Health Care":[
-          "Masks",
-          "Ayurvedic supplements",
-          "Health Drinks",
-          "Vitamin Supplements",
-          "Protein supplements",
+        id: 1,
+        'Beauty & Personal Care': [
+          'Bath & Oral Care',
+          'Personal Hygiene',
+          'Eye Makeup',
+          'Face Makeup',
+          'Lip Makeup',
+          'Hair Care',
+          'Bath Essentials',
+          "Womens's Personal Hygiene",
+        ],
+      },
+      {
+        id: 2,
+        "Men's Grooming": [
+          'Face Washes',
+          'Beard Oils',
+          'Hair Styling',
+          'Shaving Essentials',
+          'Aftershave',
+          'Face Creams & Face Packs',
+          'Soaps & Bodywashes',
+        ],
+      },
+      {
+        id: 3,
+        'Food & Drinks': [
+          'Beverages',
+          'Nuts & Dry Fruits',
+          'Cooking Essentials',
+          'Breakfast Items',
+          'Snacks Corner',
+          'Jams, Spreads & Honey',
+          'Ready to cook & eat',
+        ],
+      },
+      {
+        id: 4,
+        'Nutrition & Health Care': [
+          'Masks',
+          'Ayurvedic supplements',
+          'Health Drinks',
+          'Vitamin Supplements',
+          'Protein supplements',
           "Women'safety",
-          "Home Medicines"
-        ]
-      },{
-        "Baby care":[
-          "Baby Biapers",
-          "Baby Wipes",
-          "Baby Bath & Grooming",
-          "Baby Gift sets & Combo",
-          "Baby medical & health care",
-          "Nursing & breast feeding",
-          "feeding bottles, utensils & Accessories",
-          "Baby food"
-        ]
-      },{
-        "Toys & School Supplies":[
-          "Remote Control toys",
-          "soft toys",
-          "puzzles",
-          "Board games",
-          "Leaning & education toys",
-          "cars & die-cast vehicles",
-          "baby toys",
-          "gifting toys"
-        ]
-      },{
-        "sports & fitness":[
-          "badminton",
-          "cricket",
-          "cycling",
-          "football",
-          "fitness equipments",
-          "supports"
-        ]
-      },{
-        "Books":[
-          "Test prep",
-          "academics",
-          "literature & fiction",
-          "non fiction",
-          "young readers",
-          "audio books",
-          "indian languages",
-          "acoustic guitars"
-        ]
-      },{
-        "Music":[
-          "Musical instruments",
-          "Music & tv shows",
-          "Acoustic guitars",
-          "keys and syntheesizer",
-          "microphones",
-          "studio and stage equipments",
-          "string instruments",
-          "indian instruments",
-          "wind instruments"
-        ]
-      },{
-        "stationery & office supplies":[
-          "pens and gift sets",
-          "notebooks and diaries",
-          "art supplies",
-          "calculatore",
-          "keychains",
-          "card holders",
-          "desk orginzers"
-        ]
-      }        
-    ]
+          'Home Medicines',
+        ],
+      },
+      {
+        id: 5,
+        'Baby care': [
+          'Baby Biapers',
+          'Baby Wipes',
+          'Baby Bath & Grooming',
+          'Baby Gift sets & Combo',
+          'Baby medical & health care',
+          'Nursing & breast feeding',
+          'feeding bottles, utensils & Accessories',
+          'Baby food',
+        ],
+      },
+      {
+        id: 6,
+        'Toys & School Supplies': [
+          'Remote Control toys',
+          'soft toys',
+          'puzzles',
+          'Board games',
+          'Leaning & education toys',
+          'cars & die-cast vehicles',
+          'baby toys',
+          'gifting toys',
+        ],
+      },
+      {
+        id: 7,
+        'sports & fitness': [
+          'badminton',
+          'cricket',
+          'cycling',
+          'football',
+          'fitness equipments',
+          'supports',
+        ],
+      },
+      {
+        id: 8,
+        Books: [
+          'Test prep',
+          'academics',
+          'literature & fiction',
+          'non fiction',
+          'young readers',
+          'audio books',
+          'indian languages',
+          'acoustic guitars',
+        ],
+      },
+      {
+        id: 9,
+        Music: [
+          'Musical instruments',
+          'Music & tv shows',
+          'Acoustic guitars',
+          'keys and syntheesizer',
+          'microphones',
+          'studio and stage equipments',
+          'string instruments',
+          'indian instruments',
+          'wind instruments',
+        ],
+      },
+      {
+        id: 10,
+        'stationery & office supplies': [
+          'pens and gift sets',
+          'notebooks and diaries',
+          'art supplies',
+          'calculatore',
+          'keychains',
+          'card holders',
+          'desk orginzers',
+        ],
+      },
+    ],
   },
   {
-    id: '8',
+    id: 8,
     icon: '2wheeler.jpg',
+    image: '/menuicon/bike.png',
     name: '2-wheelers',
   },
   {
-    id: '9',
+    id: 9,
     icon: 'fashion.png',
+    image: '/menuicon/search.png',
     name: 'Fashion',
-    subItem:[
+    subItem: [
       {
-        all:[
+        id: 1,
+        "Men's Top Wear": [
           "Men's T-Shirt",
           "Men's Casual Shirts",
           "Men's Formal Shirts",
           "Men's Kurtas",
           "Men's Ethnics sets",
+        ],
+      },
+      {
+        id: 2,
+        "Men's Bottom Wear": [
           "Men's Jeans",
           "Men's Trousers",
           "Men's Trackpants",
           "Men's Shorts",
           "Men's Cargos",
-          "Women Sarees",
-          "Women Kurtas & Salwar suits",
-          "Ethnic Dresses",
-          "Women Dress Materials",
-          "Women Gowns",
-          "Women Tops",
-          "Women Dresses",
-          "Women T-shirts & polo T-shirt",
-          "Women Jeans",
-          "Women Nightsuit",
+        ],
+      },
+      {
+        id: 3,
+        'Women Ethnic': [
+          'Women Sarees',
+          'Women Kurtas & Salwar suits',
+          'Ethnic Dresses',
+          'Women Dress Materials',
+          'Women Gowns',
+        ],
+      },
+      {
+        id: 4,
+        'Women Western': [
+          'Women Tops',
+          'Women Dresses',
+          'Women T-shirts & polo T-shirt',
+          'Women Jeans',
+          'Women Nightsuit',
+        ],
+      },
+      {
+        id: 5,
+        'Men Footwear': [
           "Men's Sports Shoes",
           "Men's Casual Shoes",
           "Men's Sandals & floaters",
           "Men's Slippers & flip flops",
-          "Women Flats",
-          "Women Heels",
-          "Women Wedges",
-          "Wemen Slipper flip flops",
-          "Men & Women Watches",
-          "Men & Women Sunglasses",
-          "Wallets",
-          "Men & Women Belts",
-          "Women fashion jewellery",
-          "Bags & Backpacks",
-          "Suitcases & trolleys",
-          "dufflebags",
-          "rucksacks",
-          "handbags",
-          "slingbags",
-          "Girls Dress",
-          "Boys & girls tshirts",
-          "Boy & girls combosets",
-          "boys & girls ethnic wear",
-          "Boys & girls jeans",
+        ],
+      },
+      {
+        id: 6,
+        'Women Footwear': [
+          'Women Flats',
+          'Women Heels',
+          'Women Wedges',
+          'Wemen Slipper flip flops',
+        ],
+      },
+      {
+        id: 7,
+        'Watches and Accessories': [
+          'Men & Women Watches',
+          'Men & Women Sunglasses',
+          'Wallets',
+          'Men & Women Belts',
+          'Women fashion jewellery',
+        ],
+      },
+      {
+        id: 8,
+        'Bags Suitcases & Luggage': [
+          'Bags & Backpacks',
+          'Suitcases & trolleys',
+          'dufflebags',
+          'rucksacks',
+          'handbags',
+          'slingbags',
+        ],
+      },
+      {
+        id: 9,
+        Kids: [
+          'Girls Dress',
+          'Boys & girls tshirts',
+          'Boy & girls combosets',
+          'boys & girls ethnic wear',
+          'Boys & girls jeans',
+        ],
+      },
+      {
+        id: 10,
+        Essentials: [
           "Men's Briefs & trunks",
           "Men's vests",
           "Men's Boxers",
-          "Women lingerie sets",
-          "women bra",
-          "women panty",
-          "women sarees"
-        ]
-      },{
-        "Men's Top Wear":[
-          "Men's T-Shirt",
-          "Men's Casual Shirts",
-          "Men's Formal Shirts",
-          "Men's Kurtas",
-          "Men's Ethnics sets"
-        ]
-      },{
-        "Men's Bottom Wear":[
-          "Men's Jeans",
-          "Men's Trousers",
-          "Men's Trackpants",
-          "Men's Shorts",
-          "Men's Cargos"
-        ]
-      },{
-        "Women Ethnic":[
-          "Women Sarees",
-          "Women Kurtas & Salwar suits",
-          "Ethnic Dresses",
-          "Women Dress Materials",
-          "Women Gowns"
-        ]
-      },{
-        "Women Western":[
-          "Women Tops",
-          "Women Dresses",
-          "Women T-shirts & polo T-shirt",
-          "Women Jeans",
-          "Women Nightsuit"
-        ]
-      },{
-        "Men Footwear":[
-          "Men's Sports Shoes",
-          "Men's Casual Shoes",
-          "Men's Sandals & floaters",
-          "Men's Slippers & flip flops"
-        ]
-      },{
-        "Women Footwear":[
-          "Women Flats",
-          "Women Heels",
-          "Women Wedges",
-          "Wemen Slipper flip flops"
-        ]
-      },{
-        "Watches and Accessories":[
-          "Men & Women Watches",
-          "Men & Women Sunglasses",
-          "Wallets",
-          "Men & Women Belts",
-          "Women fashion jewellery"
-        ]
-      },{
-        "Bags Suitcases & Luggage":[
-          "Bags & Backpacks",
-          "Suitcases & trolleys",
-          "dufflebags",
-          "rucksacks",
-          "handbags",
-          "slingbags"
-        ]
-      },{
-        "Kids":[
-          "Girls Dress",
-          "Boys & girls tshirts",
-          "Boy & girls combosets",
-          "boys & girls ethnic wear",
-          "Boys & girls jeans"
-        ]
-      },{
-        "Essentials":[
-          "Men's Briefs & trunks",
-          "Men's vests",
-          "Men's Boxers",
-          "Women lingerie sets",
-          "women bra",
-          "women panty",
-          "women sarees"
-        ]
-      }        
-    ]
+          'Women lingerie sets',
+          'women bra',
+          'women panty',
+          'women sarees',
+        ],
+      },
+    ],
   },
 ]
 
@@ -719,7 +583,7 @@ export const bestOfElectronic = [
   },
 ]
 
-export const beauty_food=[
+export const beauty_food = [
   {
     id: 1,
     product: 'Pens, Notebooks & more',
@@ -768,159 +632,256 @@ export const beauty_food=[
     price: 'From $40',
     name: 'Tricycles & Rideons',
     image: '/beauty_food_toy_&_more/-tricycle-ride-on.jpg',
-  }
- 
+  },
 ]
 
-export const footer =[
-  {About:['Contact Us','About Us','Careers','Flipkart Stories','Press','Flipkart Wholesale','Corporate Infomation']},
-  {Help:['Payments','Shipping','Canellation & returns','FAQ','Report Infringement']},
-  {Policy:['Return policy','Terms Of Use','Security','Privacy','EPR Compliance']},
-  {Social:['Facebook','Twitter','Youtube']},
-  {MailUs:["Flipkart internet private Limited","Building alyssa, Begonia & Clove embassy tech village","Outer ring Road, devarabeesanahalli vilalge","Bengaluru, 560103","Karnataka,India"]},
-  {RegisteredOfficeAddress:["Flipkart internet private Limited","Building alyssa, Begonia & Clove embassy tech village","Outer ring Road, devarabeesanahalli vilalge","Bengaluru, 560103","Karnataka,India","CIN: U51109KA2012PTC066107","Telephone: 044-45614700"]},
-  {BottomPart:[
-    {
-      id:1,
-      name:"Become a Seller",
-      icon:'/subfooter/sellers-icon-removebg-preview.png'
-    },
-    {
-      id:2,
-      name:"Advertise",
-      icon:'/subfooter/advertise-removebg-preview.png'
-    },
-    {
-      id:3,
-      name: "Gift Cards",
-      icon:'/subfooter/gift-Card.png'
-    },
-    {
-      id:4,
-      name:"Help Center", 
-      icon:'/subfooter/help-center.png'
-    },
-    {
-      id:5,
-      name:'2007-2022 FlipKart.com', 
-      icon:'/subfooter/copyright.png'
-    },
-  ]},
-  {Photo:[
-    {
-      id:1,
-      image:'/cards/card-1-removebg-preview.png'
-    },
-    {
-      id:2,
-      image:'/cards/card-2-removebg-preview.png'
-    },
-    {
-      id:3,
-      image:'/cards/card-3-removebg-preview.png'
-    },
-  ]}
+export const footer = [
+  {
+    About: [
+      'Contact Us',
+      'About Us',
+      'Careers',
+      'Flipkart Stories',
+      'Press',
+      'Flipkart Wholesale',
+      'Corporate Infomation',
+    ],
+  },
+  {
+    Help: [
+      'Payments',
+      'Shipping',
+      'Canellation & returns',
+      'FAQ',
+      'Report Infringement',
+    ],
+  },
+  {
+    Policy: [
+      'Return policy',
+      'Terms Of Use',
+      'Security',
+      'Privacy',
+      'EPR Compliance',
+    ],
+  },
+  { Social: ['Facebook', 'Twitter', 'Youtube'] },
+  {
+    MailUs: [
+      'Flipkart internet private Limited',
+      'Building alyssa, Begonia & Clove embassy tech village',
+      'Outer ring Road, devarabeesanahalli vilalge',
+      'Bengaluru, 560103',
+      'Karnataka,India',
+    ],
+  },
+  {
+    RegisteredOfficeAddress: [
+      'Flipkart internet private Limited',
+      'Building alyssa, Begonia & Clove embassy tech village',
+      'Outer ring Road, devarabeesanahalli vilalge',
+      'Bengaluru, 560103',
+      'Karnataka,India',
+      'CIN: U51109KA2012PTC066107',
+      'Telephone: 044-45614700',
+    ],
+  },
+  {
+    BottomPart: [
+      {
+        id: 1,
+        name: 'Become a Seller',
+        icon: '/subfooter/sellers-icon-removebg-preview.png',
+      },
+      {
+        id: 2,
+        name: 'Advertise',
+        icon: '/subfooter/advertise-removebg-preview.png',
+      },
+      {
+        id: 3,
+        name: 'Gift Cards',
+        icon: '/subfooter/gift-Card.png',
+      },
+      {
+        id: 4,
+        name: 'Help Center',
+        icon: '/subfooter/help-center.png',
+      },
+      {
+        id: 5,
+        name: '2007-2022 FlipKart.com',
+        icon: '/subfooter/copyright.png',
+      },
+    ],
+  },
+  {
+    Photo: [
+      {
+        id: 1,
+        image: '/cards/card-1-removebg-preview.png',
+      },
+      {
+        id: 2,
+        image: '/cards/card-2-removebg-preview.png',
+      },
+      {
+        id: 3,
+        image: '/cards/card-3-removebg-preview.png',
+      },
+    ],
+  },
 ]
 
 export const winter = [
   {
-    id:'1',
-    name:"kids' Jackets",
-    offer:'Min. 50% off',
-    image:'/winter/jackets.png'
+    id: '1',
+    name: "kids' Jackets",
+    offer: 'Min. 50% off',
+    image: '/winter/jackets.png',
   },
   {
-    id:'2',
-    name:"Women's Coats",
-    offer:'Min. 50% off',
-    image:'/winter/womens-jacket.jpg'
+    id: '2',
+    name: "Women's Coats",
+    offer: 'Min. 50% off',
+    image: '/winter/womens-jacket.jpg',
   },
   {
-    id:'3',
-    name:"Men's Sweatshirts",
-    offer:'Min. 50% off',
-    image:'/winter/mens-sweet-shirt.jpg'
+    id: '3',
+    name: "Men's Sweatshirts",
+    offer: 'Min. 50% off',
+    image: '/winter/mens-sweet-shirt.jpg',
   },
   {
-    id:'4',
-    name:"Men's Caps",
-    offer:'Min. 50% off',
-    image:'/winter/mens-winter-cap.jpg'
+    id: '4',
+    name: "Men's Caps",
+    offer: 'Min. 50% off',
+    image: '/winter/mens-winter-cap.jpg',
   },
   {
-    id:'5',
-    name:"Women's Sweaters",
-    offer:'Min. 50% off',
-    image:'/winter/women-winter-sweater.jpg'
+    id: '5',
+    name: "Women's Sweaters",
+    offer: 'Min. 50% off',
+    image: '/winter/women-winter-sweater.jpg',
   },
   {
-    id:'6',
-    name:"Blankets",
-    offer:'Min. 50% off',
-    image:'/winter/blankets.jpg'
+    id: '6',
+    name: 'Blankets',
+    offer: 'Min. 50% off',
+    image: '/winter/blankets.jpg',
   },
   {
-    id:'7',
-    name:"Women's Sweatshirts",
-    offer:'Min. 50% off',
-    image:"/winter/Women’s-Sweatshirt.jpg"
+    id: '7',
+    name: "Women's Sweatshirts",
+    offer: 'Min. 50% off',
+    image: '/winter/Women’s-Sweatshirt.jpg',
   },
   {
-    id:'8',
-    name:"Men's scarves",
-    offer:'Min. 50% off',
-    image:"/winter/men's-scarves.png"
+    id: '8',
+    name: "Men's scarves",
+    offer: 'Min. 50% off',
+    image: "/winter/men's-scarves.png",
   },
- 
 ]
 
-export const joinCricket=[
+export const joinCricket = [
   {
-    id:'1',
-    name:"Cricket Balls",
-    offer:'Min. 30% off',
-    image:'/cricket/balls.jpg'
+    id: '1',
+    name: 'Cricket Balls',
+    offer: 'Min. 30% off',
+    image: '/cricket/balls.jpg',
   },
   {
-    id:'2',
-    name:"Cricket Bat",
-    offer:'Min. 30% off',
-    image:'/cricket/bats.jpg'
+    id: '2',
+    name: 'Cricket Bat',
+    offer: 'Min. 30% off',
+    image: '/cricket/bats.jpg',
   },
   {
-    id:'3',
-    name:"Cricket Bags",
-    offer:'Min. 30% off',
-    image:'/cricket/bags.jpeg'
+    id: '3',
+    name: 'Cricket Bags',
+    offer: 'Min. 30% off',
+    image: '/cricket/bags.jpeg',
   },
   {
-    id:'4',
-    name:"Cricket Gloves",
-    offer:'Min. 30% off',
-    image:'/cricket/glabs.jpg'
+    id: '4',
+    name: 'Cricket Gloves',
+    offer: 'Min. 30% off',
+    image: '/cricket/glabs.jpg',
   },
   {
-    id:'5',
-    name:"Cricket Goggles",
-    offer:'Min. 30% off',
-    image:'/cricket/glass.png'
+    id: '5',
+    name: 'Cricket Goggles',
+    offer: 'Min. 30% off',
+    image: '/cricket/glass.png',
   },
   {
-    id:'6',
-    name:"Cricket Nets",
-    offer:'Min. 30% off',
-    image:'/cricket/cricket-net.jpg'
+    id: '6',
+    name: 'Cricket Nets',
+    offer: 'Min. 30% off',
+    image: '/cricket/cricket-net.jpg',
   },
   {
-    id:'7',
-    name:"Cricket Mallets",
-    offer:'Min. 30% off',
-    image:'/cricket/mallets.jpg'
+    id: '7',
+    name: 'Cricket Mallets',
+    offer: 'Min. 30% off',
+    image: '/cricket/mallets.jpg',
   },
   {
-    id:'8',
-    name:"Cricket Guards",
-    offer:'Min. 30% off',
-    image:'/cricket/guards.jpg'
+    id: '8',
+    name: 'Cricket Guards',
+    offer: 'Min. 30% off',
+    image: '/cricket/guards.jpg',
+  },
+]
+
+export const LoginDropdownItems = [
+  {
+    id: 1,
+    name: 'My Account',
+    icon: '/login/user.png',
+  },
+  {
+    id: 2,
+    name: 'FlipKart Plus Zone',
+    icon: '/login/star.png',
+  },
+  {
+    id: 3,
+    name: 'Orders',
+    icon: '/login/clipboard.png',
+  },
+  {
+    id: 4,
+    name: 'Wishlist',
+    icon: '/login/wishlist.png',
+  },
+  {
+    id: 5,
+    name: 'Gift Cards',
+    icon: '/login/gift-card.png',
+  },
+  {
+    id: 6,
+    name: 'Rewards',
+    icon: '/login/money.png',
+  },
+]
+
+export const more = [
+  {
+    id: 1,
+    name: 'Notification preference',
+    icon: '/more/notification.png',
+  },
+  {
+    id: 2,
+    name: '24*7 customer care',
+    icon: '/more/customer-service.png',
+  },
+  {
+    id: 3,
+    name: 'Advertise',
+    icon: '/more/social-media.png',
   },
 ]

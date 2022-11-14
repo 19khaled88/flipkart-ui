@@ -80,7 +80,7 @@ const Electronic = () => {
         style={{
           width: '85%',
           padding: '20px 5px 10px 5px',
-          boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'
+          boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
           // boxShadow: '0 0 1px #333',
         }}
       >
@@ -113,7 +113,7 @@ const Electronic = () => {
                     style={{
                       width: '100%',
                       height: '66%',
-                      padding: '2px 0px 0px 0px',
+                      padding: '2px 0px 5px 0px',
                       margin: '5px 0px 0px 0px',
                     }}
                   />

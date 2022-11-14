@@ -1,6 +1,7 @@
 .menu-bar{
     /* background: rgb(0, 100,0); */
-    text-align: center;
+    /* text-align: center; */
+    
 }
 .active, .menu-bar span div:hover{
     /* background: #d8ad1e;
@@ -12,15 +13,18 @@
 }
 .sub-menu{
     display: none;
+    
 }
 .menu-bar span div:hover .sub-menu{
     display: block;
     position: absolute;
-    background: rgb(241, 243, 241);
+    /* background: rgb(241, 243, 241); */
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     margin-top: 15px;
     margin-left: 0px;
     z-index: 1;
-    margin-top: 24px;
+    margin-top: 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -30,19 +34,146 @@
    text-align: left;
    padding-left: 5px;
    padding-right: 5px;
+   border-bottom: 1px double gray;
 }
 .menu-bar span div:hover .sub-menu ul li{
     padding-bottom: 10px;
-    border-bottom: 1px double rgb(68, 41, 41);
+    /* border-bottom: 1px double gray; */
+    
+    margin: 5px 10px 5px 10px;
     background: transparent;
    
 }
-.menu-bar span div:hover .sub-menu ul li:last-child{
-  
+.menu-bar span div:hover .sub-menu ul:last-child{
     border-bottom: none
-   
+
+}
+
+.sub-menu ul li div span{
+    padding-right: 10px;
+    min-width: 200px;
+}
+
+
+
+
+.menu_bar{
+    background-color: bisque;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 5%;
+}
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
    
 }
-.sub-menu ul li:{
+.menu_bar ul li{
+    padding: 5px 5px;
+    color: green;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s;
+    position: relative;
+}
+.menu_bar ul li:hover{
+    color:orange;
+}
 
+
+
+
+.dropdown_menu{
+    display: none;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    width: 150%;
+}
+.dropdown_menu ul{
+    margin: 0px;
+    padding: 30px 0px 0px 0px;
+    width: 95%;
+}
+
+.dropdown_menu ul li{
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 55px;
+    background-color:bisque ;
+    z-index: 1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.menu_bar ul li:hover .dropdown_menu ul{
+    display: block;
+    z-index: 1;
+    margin: 0px;
+    background-color:bisque ;
+    padding-top: 10px;
+    padding-left: 6px;
+    padding-right: 0px;
+}
+.menu_bar ul li:hover .dropdown_menu ul li{
+    width: 150px;
+    padding:5px 0px 7px 0px;
+    z-index: 1;
+    margin-right: 0px;
+    background-color:bisque ;
+   
+}
+
+.menu_bar ul li:hover .dropdown_menu ul li span{
+   
+    cursor: pointer;
+}
+
+.fas{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+.dropdown_menu-1{
+    display: none;
+    background-color: aquamarine;
+    padding-left: 10px;
+    margin-left: 20px;
+    width: 158px;
+}
+
+.dropdown_menu ul li:hover .dropdown_menu-1{
+    display: block;
+    position: absolute;
+    top:0;
+    left:150px;
+    margin-left: 35px;
+    padding:1px 0px 3px 10px;
+    background-color: aquamarine;
+}
+.dropdown_menu ul li:hover .dropdown_menu-1 ul{
+    display: block;
+    background-color: aquamarine;
+    padding: 1px 0px 0px 2px;
+    margin-left: 0px;
+}
+.dropdown_menu ul li:hover .dropdown_menu-1 ul li{
+    display: block;
+    background-color: aquamarine;
+    cursor: pointer;
+    width: 138px;
+    margin-left: 0px;
+    padding:5px 0px 5px 0px
 }
