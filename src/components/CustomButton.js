@@ -7,6 +7,7 @@ import { ShoppingCart } from '@mui/icons-material'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 // import LocalHospitalIcon from '@mui/icons-material/LocalHospital'
 import { LoginDropdownItems, more } from '../data/data'
+import {Link} from 'react-router-dom'
 // import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { Box, Button, Divider, styled, Typography } from '@mui/material'
 import '../css/customButton.css'
@@ -15,13 +16,13 @@ import React from 'react'
 const Wrapper = styled(Box)`
   display: flex;
   margin: 0 3% 0 auto;
+  align-items: center;
   & > button,
   & > p,
   & > div {
     font-size: 14px;
     text-align: center;
-    align-items: center;
-
+    
     margin: 0 10px 0 10px;
   }
 `
@@ -44,20 +45,24 @@ const LoginDropdown = styled(Box)`
   align-items: center;
   padding-left: 10px;
 `
-
+const clickHandler=(data)=>{
+  console.log(data)
+}
 const CustomButton = () => {
   const customFunc = (data) => {
     let array = []
     data.map((item, index) =>
       array.push(
-        <div
+        <div 
           key={index}
           style={{
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'center',
             paddingLeft: '8px',
+            cursor:'pointer'
           }}
+          onClick={()=>clickHandler(item.name)}
         >
           <img
             src={item.icon}
@@ -71,6 +76,7 @@ const CustomButton = () => {
               padding: '7px 5px 7px 5px',
             }}
           >
+            
             {item.name}
           </li>
 
@@ -88,15 +94,16 @@ const CustomButton = () => {
         style={{
           display: 'flex',
           flexDirection: 'column',
+          
         }}
       >
-        <LoginButton className="menu-button">Login</LoginButton>
+       <Link style={{textDecoration:'none'}} to="/login"> <LoginButton className="menu-button">Login</LoginButton></Link>
         <ul
           className="dropdown-menu"
           key={Math.random() * 100000}
           style={{
             margin: '0px',
-            padding: '0px',
+            padding: '2px',
             color: 'black',
             position: 'absolute',
             backgroundColor: '#fff',
@@ -106,13 +113,15 @@ const CustomButton = () => {
             // borderBottomRightRadius: '5px',
             boxShadow:
               'rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px',
-            width: '150px',
+            width: '180px',
           }}
         >
+          <p>Haven't Account? <Link style={{paddingLeft:'3px'}} to="/register">Sign-Up</Link> </p>
+            <Divider />
           {customFunc(LoginDropdownItems)}
         </ul>
       </Box>
-      <Typography style={{ marginTop: 3 }}>Become a seller</Typography>
+      <Link style={{textDecoration:'none',color:'white'}} to="/becomeseller"><Typography style={{  cursor:'pointer', }}>Become a seller</Typography></Link>
       <Box className="more-menu">
         <Typography
           className="menu-button"
@@ -131,18 +140,18 @@ const CustomButton = () => {
           className="dropdown-menu"
           key={Math.random() * 100000}
           style={{
-            margin: '0px',
+            margin: '0px 0px 0px 3px',
             padding: '0px',
             color: 'black',
             position: 'absolute',
             backgroundColor: '#fff',
-            top: 35,
+            top: 33,
             borderRadius: '5px',
             // borderBottomLeftRadius: '5px',
             // borderBottomRightRadius: '5px',
             boxShadow:
               'rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px',
-            width: '150px',
+            width: '180px',
           }}
         >
           {customFunc(more)}
@@ -151,7 +160,7 @@ const CustomButton = () => {
 
       <Typography
         style={{
-          marginTop: 3,
+          cursor:'pointer',
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'start',

@@ -1,5 +1,6 @@
 import { AppBar, Box, styled, Toolbar, Typography } from '@mui/material'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../css/header.css'
 import CustomButton from './CustomButton'
 
@@ -24,11 +25,13 @@ const Header = () => {
       <StyleHeader>
         <Toolbar style={{ minHeight: '55px' }}>
           <Component>
-            <img
-              src="/Flipkart-Logo-2007.png"
-              alt="empty"
-              style={{ width: 95 }}
-            />
+            <Link to='/'>
+              <img
+                src="/Flipkart-Logo-2007.png"
+                alt="empty"
+                style={{ width: 95 }}
+              />
+            </Link>
             <Box>
               <SubHeading>
                 Explore

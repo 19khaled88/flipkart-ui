@@ -1216,3 +1216,276 @@ export const offers = [
     target: 'TopOfOffers',
   },
 ]
+
+export const becomeseller = [
+  {
+    id: 1,
+    image: '/becomeseller/1.png',
+    name: 'Chaitanya Ramalingegowda, Wakefit.co',
+    data:
+      'BBD and BDS sales compounded the consumer demand which led to a milestone of 150% YoY revenue growth from Flipkart.',
+  },
+  {
+    id: 2,
+    image: '/becomeseller/2.png',
+    name: 'Raju Lunawath, Amazestore',
+    data:
+      'Starting with 1, Flipkart helped me expand to 6 categories with 5x growth year on year!',
+  },
+  {
+    id: 3,
+    image: '/becomeseller/3.png',
+    name: 'Shubhash Chopra, DivisaStore',
+    data:
+      'With Flipkart, we went from Rs.20,000 to Rs.2 Cr in sales per annum!',
+  },
+]
+
+// export const question = [
+//   {
+//     'WHY SELL ONLINE': [
+//       {
+//         id: 1,
+//         'Growth in the online retail market': [
+//           'Witnessing tremendous growth for the past 5 years, retailers are moving towards online selling.',
+//           ['Avoid huge investments', 'Large customer base to sell anywhere'],
+//         ],
+//       },
+//       {
+//         id: 2,
+//         'Get orders across india': [
+//           'Receive orders from every part of the country and follow the simple steps to fulfill the orders.',
+//           ['Simple dashboard', 'Sale events, advertising and promotions'],
+//         ],
+//       },
+//       {
+//         id: 3,
+//         'Ship with ease': [
+//           'Enjoy easy pick-up and delivery across India with Ekart, our logistics partner.',
+//           ['Efficient pick-up network', 'Professional packaging support'],
+//         ],
+//       },
+//       {
+//         id: 4,
+//         'Earn big': [
+//           'Our payments process is the fastest in the industry - get your payments in as little as 7 days of sales.',
+//           [
+//             'Fastest payment settlement',
+//             'Detailed reports to track your payments',
+//           ],
+//         ],
+//       },
+//     ],
+//   },
+//   {
+//     'WHY FLIPKART': [
+//       {
+//         '#BachonKaKhel': {
+//           id: 1,
+//           video: '',
+//         },
+//         'Advantages of Selling on Flipkart': {
+//           Growth: {
+//             id: 1,
+//             image: '',
+//             data:
+//               'Widen your reach to a customer base of 1 billion and grow your business further with the support of Account managers.',
+//           },
+//           'Lowest cost of doing business': {
+//             id: 2,
+//             image: '',
+//             data:
+//               'Along with the most competitive rate card in the industry you also get on-time and reliable payments.',
+//           },
+//           Ease: {
+//             id: 2,
+//             image: '',
+//             data:
+//               'You just need 1 product and 2 documents to start selling on Flipkart.',
+//           },
+//           Transparency: {
+//             id: 2,
+//             image: '',
+//             data: 'Equal opportunities for all the sellers to grow.',
+//           },
+//         },
+//       },
+//     ],
+//   },
+//   {
+//     'WHY SHOPSY': [
+//       {
+//         'Lowest Cost Of Doing Business': {
+//           id: 1,
+//           video: '',
+//         },
+//         'Brand New Marketplace By Flipkart': {
+//           '0% Commission platform': {
+//             id: 1,
+//             image: '',
+//             data: 'This will be applicable to verticals listed only on Shopsy',
+//           },
+//           'Easy product listings': {
+//             id: 2,
+//             image: '',
+//             data:
+//               'Image guidelines are relaxed and easy to follow. Sellers can upload tabletop and hanger images clicked with mobile phones.',
+//           },
+//           'No brand regulations': {
+//             id: 2,
+//             image: '',
+//             data: 'No trademark registration required to sell your own brand.',
+//           },
+//           'Enhanced reach to millions of customers': {
+//             id: 2,
+//             image: '',
+//             data:
+//               'You capture a huge amount of budget-friendly consumers through resellers. These resellers reach the consumer base through their social media channels.',
+//           },
+//         },
+//       },
+//     ],
+//   },
+//   {
+//     'HOW TO BE A SELLER': [
+//       {
+//         '3 steps to register as a Flipkart Seller': {
+//           id: 1,
+//           video: '',
+//         },
+//         'You need just 3 things to become a Flipkart Seller.': {
+//           'At least 1 product to sell': {
+//             id: 1,
+//             image: '',
+//             data:
+//               'All you need is a minimum of 1 unique product to start selling on Flipkart.',
+//           },
+//           'GSTIN details': {
+//             id: 2,
+//             image: '',
+//             data:
+//               'You are required to furnish the details of your GSTIN to sell your products online.',
+//           },
+//           'Pick-up Address': {
+//             id: 2,
+//             image: '',
+//             data:
+//               'Sharing your pickup address and pincode will help us pick your products to sell.',
+//           },
+//         },
+//       },
+//     ],
+//   },
+// ]
+export const question = [
+  {
+    title: 'WHY SELL ONLINE',
+    'Growth in the online retail market': [
+      'Witnessing tremendous growth for the past 5 years, retailers are moving towards online selling.',
+      ['Avoid huge investments', 'Large customer base to sell anywhere'],
+    ],
+    'Get orders across india': [
+      'Receive orders from every part of the country and follow the simple steps to fulfill the orders.',
+      ['Simple dashboard', 'Sale events, advertising and promotions'],
+    ],
+    'Ship with ease': [
+      'Enjoy easy pick-up and delivery across India with Ekart, our logistics partner.',
+      ['Efficient pick-up network', 'Professional packaging support'],
+    ],
+    'Earn big': [
+      'Our payments process is the fastest in the industry - get your payments in as little as 7 days of sales.',
+      ['Fastest payment settlement', 'Detailed reports to track your payments'],
+    ],
+  },
+  {
+    title: 'WHY FLIPKART',
+    '#BachonKaKhel': {
+      id: 1,
+      video: '',
+    },
+    'Advantages of Selling on Flipkart': {
+      Growth: {
+        id: 1,
+        image: '',
+        data:
+          'Widen your reach to a customer base of 1 billion and grow your business further with the support of Account managers.',
+      },
+      'Lowest cost of doing business': {
+        id: 2,
+        image: '',
+        data:
+          'Along with the most competitive rate card in the industry you also get on-time and reliable payments.',
+      },
+      Ease: {
+        id: 2,
+        image: '',
+        data:
+          'You just need 1 product and 2 documents to start selling on Flipkart.',
+      },
+      Transparency: {
+        id: 2,
+        image: '',
+        data: 'Equal opportunities for all the sellers to grow.',
+      },
+    },
+  },
+  {
+    title: 'WHY SHOPSY',
+    'Lowest Cost Of Doing Business': {
+      id: 1,
+      video: '',
+    },
+    'Brand New Marketplace By Flipkart': {
+      '0% Commission platform': {
+        id: 1,
+        image: '',
+        data: 'This will be applicable to verticals listed only on Shopsy',
+      },
+      'Easy product listings': {
+        id: 2,
+        image: '',
+        data:
+          'Image guidelines are relaxed and easy to follow. Sellers can upload tabletop and hanger images clicked with mobile phones.',
+      },
+      'No brand regulations': {
+        id: 2,
+        image: '',
+        data: 'No trademark registration required to sell your own brand.',
+      },
+      'Enhanced reach to millions of customers': {
+        id: 2,
+        image: '',
+        data:
+          'You capture a huge amount of budget-friendly consumers through resellers. These resellers reach the consumer base through their social media channels.',
+      },
+    },
+  },
+
+  {
+    title: 'HOW TO BE A SELLER',
+    '3 steps to register as a Flipkart Seller': {
+      id: 1,
+      video: '',
+    },
+    'You need just 3 things to become a Flipkart Seller.': {
+      'At least 1 product to sell': {
+        id: 1,
+        image: '',
+        data:
+          'All you need is a minimum of 1 unique product to start selling on Flipkart.',
+      },
+      'GSTIN details': {
+        id: 2,
+        image: '',
+        data:
+          'You are required to furnish the details of your GSTIN to sell your products online.',
+      },
+      'Pick-up Address': {
+        id: 2,
+        image: '',
+        data:
+          'Sharing your pickup address and pincode will help us pick your products to sell.',
+      },
+    },
+  },
+]
