@@ -4,24 +4,28 @@ export const data = [
     icon: '/special-offer.jpg',
     image: '/menuicon/offer.png',
     name: 'Special Offers',
+    link: '/page/offer',
   },
   {
     id: 2,
     icon: '/Grocery-logos.png',
     image: '/menuicon/grocery.png',
     name: 'Grocery',
+    link: '/page/grocery',
   },
   {
     id: 3,
     icon: '/mobile-phone-icon-.png',
     image: '/menuicon/smartphone.png',
     name: 'Mobiles',
+    link: '/page/mobile',
   },
   {
     id: 4,
     icon: '/electronic.jpg',
     image: '/menuicon/responsive.png',
     name: 'Electronics',
+    link: '/page/electronics',
     subItem: [
       {
         id: 1,
@@ -133,6 +137,7 @@ export const data = [
     icon: '/home-decorating.jpg',
     image: '/menuicon/house.png',
     name: 'Home',
+    link: '/page/homedecore',
     subItem: [
       {
         id: 1,
@@ -247,12 +252,14 @@ export const data = [
     icon: '/travel.jpg',
     image: '/menuicon/airplane.png',
     name: 'Travel',
+    link: '/page/travel',
   },
   {
     id: 7,
     icon: '/toy.jpg',
     image: '/menuicon/storage-box.png',
     name: 'Beauty & toy',
+    link: '/page/beauty&toy',
     subItem: [
       {
         id: 1,
@@ -386,12 +393,14 @@ export const data = [
     icon: '2wheeler.jpg',
     image: '/menuicon/bike.png',
     name: '2-wheelers',
+    link: '/page/2wheelers',
   },
   {
     id: 9,
     icon: 'fashion.png',
     image: '/menuicon/search.png',
     name: 'Fashion',
+    link: '/page/fashion',
     subItem: [
       {
         id: 1,
@@ -1241,142 +1250,6 @@ export const becomeseller = [
   },
 ]
 
-// export const question = [
-//   {
-//     'WHY SELL ONLINE': [
-//       {
-//         id: 1,
-//         'Growth in the online retail market': [
-//           'Witnessing tremendous growth for the past 5 years, retailers are moving towards online selling.',
-//           ['Avoid huge investments', 'Large customer base to sell anywhere'],
-//         ],
-//       },
-//       {
-//         id: 2,
-//         'Get orders across india': [
-//           'Receive orders from every part of the country and follow the simple steps to fulfill the orders.',
-//           ['Simple dashboard', 'Sale events, advertising and promotions'],
-//         ],
-//       },
-//       {
-//         id: 3,
-//         'Ship with ease': [
-//           'Enjoy easy pick-up and delivery across India with Ekart, our logistics partner.',
-//           ['Efficient pick-up network', 'Professional packaging support'],
-//         ],
-//       },
-//       {
-//         id: 4,
-//         'Earn big': [
-//           'Our payments process is the fastest in the industry - get your payments in as little as 7 days of sales.',
-//           [
-//             'Fastest payment settlement',
-//             'Detailed reports to track your payments',
-//           ],
-//         ],
-//       },
-//     ],
-//   },
-//   {
-//     'WHY FLIPKART': [
-//       {
-//         '#BachonKaKhel': {
-//           id: 1,
-//           video: '',
-//         },
-//         'Advantages of Selling on Flipkart': {
-//           Growth: {
-//             id: 1,
-//             image: '',
-//             data:
-//               'Widen your reach to a customer base of 1 billion and grow your business further with the support of Account managers.',
-//           },
-//           'Lowest cost of doing business': {
-//             id: 2,
-//             image: '',
-//             data:
-//               'Along with the most competitive rate card in the industry you also get on-time and reliable payments.',
-//           },
-//           Ease: {
-//             id: 2,
-//             image: '',
-//             data:
-//               'You just need 1 product and 2 documents to start selling on Flipkart.',
-//           },
-//           Transparency: {
-//             id: 2,
-//             image: '',
-//             data: 'Equal opportunities for all the sellers to grow.',
-//           },
-//         },
-//       },
-//     ],
-//   },
-//   {
-//     'WHY SHOPSY': [
-//       {
-//         'Lowest Cost Of Doing Business': {
-//           id: 1,
-//           video: '',
-//         },
-//         'Brand New Marketplace By Flipkart': {
-//           '0% Commission platform': {
-//             id: 1,
-//             image: '',
-//             data: 'This will be applicable to verticals listed only on Shopsy',
-//           },
-//           'Easy product listings': {
-//             id: 2,
-//             image: '',
-//             data:
-//               'Image guidelines are relaxed and easy to follow. Sellers can upload tabletop and hanger images clicked with mobile phones.',
-//           },
-//           'No brand regulations': {
-//             id: 2,
-//             image: '',
-//             data: 'No trademark registration required to sell your own brand.',
-//           },
-//           'Enhanced reach to millions of customers': {
-//             id: 2,
-//             image: '',
-//             data:
-//               'You capture a huge amount of budget-friendly consumers through resellers. These resellers reach the consumer base through their social media channels.',
-//           },
-//         },
-//       },
-//     ],
-//   },
-//   {
-//     'HOW TO BE A SELLER': [
-//       {
-//         '3 steps to register as a Flipkart Seller': {
-//           id: 1,
-//           video: '',
-//         },
-//         'You need just 3 things to become a Flipkart Seller.': {
-//           'At least 1 product to sell': {
-//             id: 1,
-//             image: '',
-//             data:
-//               'All you need is a minimum of 1 unique product to start selling on Flipkart.',
-//           },
-//           'GSTIN details': {
-//             id: 2,
-//             image: '',
-//             data:
-//               'You are required to furnish the details of your GSTIN to sell your products online.',
-//           },
-//           'Pick-up Address': {
-//             id: 2,
-//             image: '',
-//             data:
-//               'Sharing your pickup address and pincode will help us pick your products to sell.',
-//           },
-//         },
-//       },
-//     ],
-//   },
-// ]
 export const question = [
   {
     title: 'WHY SELL ONLINE',
@@ -1488,4 +1361,80 @@ export const question = [
       },
     },
   },
+]
+
+export const mobilePhoneLink = [
+  'Nothing Phone 1',
+  'gle Pixel 6A',
+  'vivo T1X',
+  'OPPO Reno 8 Pro 5G',
+  'OPPO Reno7 Pro 5G',
+  'OPPO Reno7 5G',
+  'iPhone 13',
+  'iPhone 13 Pro',
+  'iPhone 13 Pro Max',
+  'iPhone 13 Mini',
+  'iPhone 12',
+]
+
+export const brandLogo = [
+  '/mobile/Infinix.png',
+  '/mobile/iPhonel.png',
+  '/mobile/narzo.png',
+  '/mobile/oppo.jpg',
+  '/mobile/poco.png',
+  '/mobile/realme.png',
+  '/mobile/Vivo-Logo.jpg',
+  '/mobile/Xiaomi.png',
+]
+
+export const poco = [
+  '/mobile/poco/poco-7.jpg',
+  '/mobile/poco/poco-2.jpg',
+  '/mobile/poco/poco-3.jpg',
+  '/mobile/poco/poco-4.jpg',
+  '/mobile/poco/poco-5.jpg',
+  '/mobile/poco/poco-6.jpg',
+]
+export const samsung = [
+  '/mobile/samsung/samsung-1.jpg',
+  '/mobile/samsung/samsung-2.jpg',
+  '/mobile/samsung/samsung-3.jpg',
+  '/mobile/samsung/samsung-4.jpg',
+  '/mobile/samsung/samsung-5.jpg',
+  '/mobile/samsung/samsung-6.jpg',
+  '/mobile/samsung/samsung-7.jpg',
+  '/mobile/samsung/samsung-8.jpg',
+]
+
+export const brand = [
+  'realme',
+  'POCO',
+  'Infinix',
+  'Samsung',
+  'Mi',
+  'Apple',
+  'Adcom',
+  'AirTyme',
+  'Alcatel',
+  'amp',
+  'anee',
+  'Angage',
+  'Asus',
+  'Acer',
+  'Benco',
+  'Binatone',
+  'BlackBear',
+  'Beetel',
+]
+
+export const rating = ['1', '2', '3', '4', '5']
+export const ram = [
+  '2 GB',
+  '4 GB',
+  '8 GB',
+  '16 GB',
+  '32 BG',
+  '4 GB & Below',
+  '8 GB & Below',
 ]

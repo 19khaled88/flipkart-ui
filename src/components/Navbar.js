@@ -2,6 +2,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../css/nav.css'
 import { data } from '../data/data'
 const Navbar = () => {
@@ -142,33 +143,34 @@ const Navbar = () => {
               style={{ width: '120px' }}
               keys={info.id}
             >
-              <div
-                style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                }}
-              >
-                {
-                  <img
-                    src={info.image}
-                    alt="empty"
-                    style={{ width: '30px', height: '30px' }}
-                  />
-                }
-                <span>
-                  {info.name}
-                  {info.subItem && info.subItem !== undefined ? (
-                    info.id == activeId ? (
-                      <i className="fas fa-caret-up"></i>
-                    ) : (
-                      <i className="fas fa-caret-down"></i>
-                    )
-                  ) : null}
-                </span>
-              </div>
-
+              <Link to={info.link} style={{ textDecoration: 'none' }}>
+                <div
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}
+                >
+                  {
+                    <img
+                      src={info.image}
+                      alt="empty"
+                      style={{ width: '30px', height: '30px' }}
+                    />
+                  }
+                  <span>
+                    {info.name}
+                    {info.subItem && info.subItem !== undefined ? (
+                      info.id == activeId ? (
+                        <i className="fas fa-caret-up"></i>
+                      ) : (
+                        <i className="fas fa-caret-down"></i>
+                      )
+                    ) : null}
+                  </span>
+                </div>
+              </Link>
               <div
                 className={
                   info.subItem && info.subItem !== undefined

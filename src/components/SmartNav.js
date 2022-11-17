@@ -1,5 +1,6 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../css/nav.css'
 import { data } from '../data/data'
 const SmartNav = () => {
@@ -70,7 +71,10 @@ const SmartNav = () => {
                 alignItems: 'center',
               }}
             >
-              {info.name}
+              <Link style={{ textDecoration: 'none' }} to={info.link}>
+                {' '}
+                {info.name}
+              </Link>
               {info.subItem && info.subItem !== undefined ? (
                 info.id == activeId ? (
                   <i className="fas fa-caret-up"></i>

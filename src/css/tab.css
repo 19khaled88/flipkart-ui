@@ -1,11 +1,11 @@
-.active{
+/* .active{
   display: block;
   
 }
 .inactive{
     display: none;
     
-}
+} */
 .block-tabs{
     display: flex;
     flex-direction: row;

@@ -2,6 +2,7 @@
 // import TabPanel from '@mui/lab/TabPanel'
 import { Box, Divider } from '@mui/material'
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../css/tab.css'
 import { becomeseller, question } from '../data/data'
 const Become = () => {
@@ -289,11 +290,13 @@ const Become = () => {
             height: '100%',
           }}
         >
-          <img
-            src="/Flipkart-sellers-hub.jpg"
-            alt="empty"
-            style={{ width: '50px', height: '90%', width: '20%' }}
-          />
+          <Link style={{ width: '120px' }} to="/">
+            <img
+              src="/Flipkart-sellers-hub.jpg"
+              alt="empty"
+              style={{ width: '100%', height: '90%' }}
+            />
+          </Link>
           <ul
             style={{
               display: 'flex',
@@ -387,6 +390,7 @@ const Become = () => {
           flexDirection: 'row',
           justifyContent: 'space-evenly',
           height: '200px',
+          marginBottom: '30px',
         }}
       >
         <div style={{ position: 'relative' }}>

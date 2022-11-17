@@ -6,8 +6,8 @@ import { ShoppingCart } from '@mui/icons-material'
 // import FavoriteIcon from '@mui/icons-material/Favorite'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 // import LocalHospitalIcon from '@mui/icons-material/LocalHospital'
+import { Link } from 'react-router-dom'
 import { LoginDropdownItems, more } from '../data/data'
-import {Link} from 'react-router-dom'
 // import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { Box, Button, Divider, styled, Typography } from '@mui/material'
 import '../css/customButton.css'
@@ -22,7 +22,7 @@ const Wrapper = styled(Box)`
   & > div {
     font-size: 14px;
     text-align: center;
-    
+
     margin: 0 10px 0 10px;
   }
 `
@@ -45,7 +45,7 @@ const LoginDropdown = styled(Box)`
   align-items: center;
   padding-left: 10px;
 `
-const clickHandler=(data)=>{
+const clickHandler = (data) => {
   console.log(data)
 }
 const CustomButton = () => {
@@ -53,16 +53,16 @@ const CustomButton = () => {
     let array = []
     data.map((item, index) =>
       array.push(
-        <div 
+        <div
           key={index}
           style={{
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'center',
             paddingLeft: '8px',
-            cursor:'pointer'
+            cursor: 'pointer',
           }}
-          onClick={()=>clickHandler(item.name)}
+          onClick={() => clickHandler(item.name)}
         >
           <img
             src={item.icon}
@@ -76,7 +76,6 @@ const CustomButton = () => {
               padding: '7px 5px 7px 5px',
             }}
           >
-            
             {item.name}
           </li>
 
@@ -94,10 +93,12 @@ const CustomButton = () => {
         style={{
           display: 'flex',
           flexDirection: 'column',
-          
         }}
       >
-       <Link style={{textDecoration:'none'}} to="/login"> <LoginButton className="menu-button">Login</LoginButton></Link>
+        <Link style={{ textDecoration: 'none' }} to="/login">
+          {' '}
+          <LoginButton className="menu-button">Login</LoginButton>
+        </Link>
         <ul
           className="dropdown-menu"
           key={Math.random() * 100000}
@@ -116,12 +117,22 @@ const CustomButton = () => {
             width: '180px',
           }}
         >
-          <p>Haven't Account? <Link style={{paddingLeft:'3px'}} to="/register">Sign-Up</Link> </p>
-            <Divider />
+          <p>
+            Haven't Account?{' '}
+            <Link style={{ paddingLeft: '3px' }} to="/register">
+              Sign-Up
+            </Link>{' '}
+          </p>
+          <Divider />
           {customFunc(LoginDropdownItems)}
         </ul>
       </Box>
-      <Link style={{textDecoration:'none',color:'white'}} to="/becomeseller"><Typography style={{  cursor:'pointer', }}>Become a seller</Typography></Link>
+      <Link
+        style={{ textDecoration: 'none', color: 'white' }}
+        to="/becomeseller"
+      >
+        <Typography style={{ cursor: 'pointer' }}>Become a seller</Typography>
+      </Link>
       <Box className="more-menu">
         <Typography
           className="menu-button"
@@ -158,17 +169,21 @@ const CustomButton = () => {
         </ul>
       </Box>
 
-      <Typography
-        style={{
-          cursor:'pointer',
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'start',
-        }}
-      >
-        <ShoppingCart />
-        Cart
-      </Typography>
+      <Link style={{ textDecoration: 'none' }} to="/cart">
+        {' '}
+        <Typography
+          style={{
+            cursor: 'pointer',
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'start',
+            color: 'white',
+          }}
+        >
+          <ShoppingCart />
+          Cart
+        </Typography>
+      </Link>
     </Wrapper>
   )
 }
